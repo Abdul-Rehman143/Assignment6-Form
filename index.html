@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Challenge</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          required
+        /><br /><br />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <label for="bio">Bio:</label><br />
+        <textarea id="bio" name="bio" rows="4" cols="50" required></textarea
+        ><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="Male" required /></br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="Female" required /></br>
+        <label for="other">Other:</label>
+        <input
+          type="radio"
+          id="other"
+          name="gender"
+          value="Other"
+          required
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Interests</legend>
+        <label for="music">Music</label>
+        <input type="checkbox" id="music" name="interests" value="Music" /></br>
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports" /></br>
+        <label for="reading">Reading</label>
+        <input
+          type="checkbox"
+          id="reading"
+          name="interests"
+          value="Reading"
+        /><br /><br />
+      </fieldset>
+    </br>
+    
+
+
+      
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="United States">United States</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="Others">Others</option></select
+        ><br /><br />
+       
+
+      
+        Preferred Colors
+        <label for="colors">Choose Colors:</label><br />
+        <select id="colors" name="colors" multiple required>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option></select
+        ><br /><br />
+      
+
+      
+        Profile Picture
+        <label for="profilePic">Upload Profile Picture:</label>
+        <input
+          type="file"
+          id="profilePic"
+          name="profilePic"
+          accept="image/*"
+          required
+        /><br /><br />
+      
+
+      Birthdate
+        <label for="birthdate">Birthdate:</label>
+        <input
+          type="date"
+          id="birthdate"
+          name="birthdate"
+          required
+        /><br /><br />
+      
+
+      
+       Contact Information
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+      </fieldset>
+
+      
+        Website
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website" /><br /><br />
+      
+
+      
+        Search
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" /><br /><br />
+      
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
